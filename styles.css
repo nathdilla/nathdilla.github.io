@@ -1,0 +1,224 @@
+button {
+  padding: auto;
+}
+
+canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+html {
+  font-family: myFirstFont;
+  color: #141414;
+  line-height: 5px;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+
+  line-height: 15px;
+}
+
+li {
+  padding-left: 50%;
+}
+
+
+input {
+  border: black;
+  border-radius: 10px;
+  border-style: solid;
+  margin-left: 10%;
+}
+
+input:hover {
+  border: white;
+  border-radius: 10px;
+  border-style: solid;
+}
+
+body {
+  margin: 0;
+  background: rgb(36, 36, 36);
+  overflow: scroll;
+}
+
+h1 {
+  font-size: 50px;
+  color: white;
+}
+
+h2 {
+  color: white;
+  line-height: 20px;
+}
+
+footer {
+    position: fixed; /* Fixed position to stick at the bottom */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+    background-color: black; /* Example background color */
+    color: white; /* Example text color */
+    text-align: center; /* Center align text */
+    padding: 10px; /* Add some padding */
+}
+
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(assets/BebasNeue-Regular.ttf);
+}
+
+#coolclock {
+  background-image: url("assets/abstract.jpg");
+  width: 355px;
+  height: 100px;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 15px;
+}
+
+#verse {
+  background-image: url("assets/galaxy.jpg");
+  line-height: 15px;
+  width: 355px;
+  height: 100px;
+  margin: auto;
+  color: white;
+  border-radius: 10px;
+  border: black;
+  border-width: 10px;
+  position: relative;
+  opacity: 0;
+}
+
+#tails {
+  position: absolute;
+  padding-top: 10px;
+  z-index: 99;
+}
+
+#header {
+  position: sticky;
+  top: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-backdrop-filter: blur(4px);
+  -o-backdrop-filter: blur(4px);
+  -moz-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+}
+
+#navarrow {
+  width: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#nav {
+  display: inline-block;
+  text-align: center;
+  width: 40%;
+}
+
+#clock {
+  background-image: url("assets/dots.jpg");
+  height: 100px;
+  width: 65%;
+  margin: 0 auto;
+  border-radius: 20px;
+  border-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+
+#coollinks {
+  font-size: 50px;
+}
+
+#quote {
+  position: absolute;
+  padding-top: 10%;
+  text-align: center;
+  font-size: 4vw;
+  width: 100%;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#blurb {
+  width: 45%;
+  font-size: 25px;
+  line-height: 25px;
+  display: inline-block;
+  padding-right: 5%;
+  text-align: justify;
+  padding-top: 100px;
+  
+}
+
+
+
+#test {
+  display: inline-block;
+}
+
+#wrapper {
+  border-radius: 10px;
+  margin-top: 30%;
+  background: linear-gradient(
+    180deg,
+    rgba(214, 214, 214, 1) 0%,
+    rgba(177, 177, 177, 1) 100%
+  );
+  display: flex;
+}
+
+#rcorners1:hover {
+  border-radius: 20px;
+  border-color: rgb(255, 255, 255);
+  padding: 5px;
+}
+
+#rcorners1 {
+  border-radius: 20px;
+  border-color: rgba(0, 0, 0, 0);
+  padding: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+  #nav {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  #blurb {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: auto;
+  }
+}
+
+.canvas-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px; /* Set the width to match the canvas */
+  height: 500px; /* Set the height to match the canvas */
+  border: 2px solid black; /* Add border for demonstration */
+}
+
