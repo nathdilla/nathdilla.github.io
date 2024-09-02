@@ -14,25 +14,74 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  font-size: 90px;
+  line-height: 0;
+}
+
+.noto-serif-display-big-text {
+  font-family: "Noto Serif Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: bold;
+  font-size: 12vw;
+  font-variation-settings:
+    "wdth" 100;
+  color: var(--secondary-color);
+}
+
+.noto-serif-display-small-text {
+  font-family: "Noto Serif Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: bold;
+  font-variation-settings:
+    "wdth" 100;
+  color: var(--secondary-color);
+}
+
+.helvetica-small {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 25px;
+  color: var(--secondary-color);
+}
+
+.helvetica-med {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 35px;
+  color: var(--secondary-color);
+}
+
+.helvetica-large {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 45px;
+  color: var(--secondary-color);
+}
+
+span.stretch {
+  display:inline-block;
+  -webkit-transform:scale(2,1); /* Safari and Chrome */
+  -moz-transform:scale(2,1); /* Firefox */
+  -ms-transform:scale(2,1); /* IE 9 */
+  -o-transform:scale(2,1); /* Opera */
+  transform:scale(2,1); /* W3C */
+  padding: 0px 11vw;
 }

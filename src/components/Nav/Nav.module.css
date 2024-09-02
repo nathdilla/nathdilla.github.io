@@ -1,0 +1,16 @@
+.nav_container {
+    width: 100vw;
+    backdrop-filter: blur(10px);
+    position:fixed;
+    top: 0; /* This makes the div stick to the top of its container */
+    z-index: 1000; /* Optional: Ensures the div stays on top of other elements */
+  }
+  
+  .nav {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
