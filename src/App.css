@@ -36,7 +36,7 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: bold;
-  font-size: 12vw;
+  font-size: 9vw;
   font-variation-settings:
     "wdth" 100;
   color: var(--secondary-color);
@@ -83,5 +83,5 @@ span.stretch {
   -ms-transform:scale(2,1); /* IE 9 */
   -o-transform:scale(2,1); /* Opera */
   transform:scale(2,1); /* W3C */
-  padding: 0px 11vw;
+  padding: 0px 12vw;
 }
