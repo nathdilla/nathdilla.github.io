@@ -1,0 +1,49 @@
+.archText {
+    position: absolute;
+    top: 20%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    font-size: 5vw;
+    animation: growShrink 1s infinite alternate;
+    color: green;
+    z-index: 3; /* Ensure text is above all other elements */
+}
+
+@keyframes growShrink {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+}
+
+.cardContainer {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ff4646;
+    overflow: hidden;
+}
+
+.gridContainer {
+    position:absolute;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+.photo {
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 80%;
+    height: 50vw;
+    width: 50vw;
+    z-index: 3; /* Ensure it's above both grid and text */
+}
+

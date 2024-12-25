@@ -1,0 +1,18 @@
+.emoji {
+    font-size: 10vh;
+    display: inline-block;
+    transform: rotate(-20deg);
+    animation: spin 1s infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(-20deg);
+    }
+    50% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(-20deg);
+    }
+}
