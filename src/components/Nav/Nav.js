@@ -1,27 +1,42 @@
-import React, { Component, useRef } from 'react'
-import styles from './Nav.module.css'
+import React from 'react';
+import styles from './Nav.module.css';
 
-const Nav = () => {
-// Create a ref for the target component
-const targetRef = useRef(null);
+const Nav = ({ refs, scrollToComponent }) => {
+    const { aboutRef, funLinksRef } = refs;
 
-// Handle the click event
-const scrollToComponent = (e) => {
-    e.preventDefault(); // Prevent the default link behavior
-    targetRef.current.scrollIntoView({ behavior: 'smooth' });
-};
-return (
-    <div className={styles.nav_container}>
-    <span className='helvetica-small'>
-        <div className={styles.nav}>
-        <div className="name-nav">nathan dilla</div>
-        <div className="aboutme-nav">about me</div>
-        <div className="exp-nav">experience</div>
-        <div className="contact-nav">contact</div>
-        <div className="fun-nav">fun links</div>
+    console.log("✅ Nav.js Loaded!");
+console.log("🔥 Received refs:", refs);
+console.log("🔥 Received scrollToComponent function:", scrollToComponent);
+
+    return (
+        <div className={styles.container}>
+            <div className={styles.nav_container}>
+                <div className={styles.home}>
+                    <div className="name-nav">nathan dilla</div>
+                </div>
+                <div className={styles.nav}>
+                <div 
+                        className="aboutme-nav" 
+                        onClick={(e) => {
+                            console.log("🖱️ About Me Clicked!");
+                            scrollToComponent(e, aboutRef);
+                        }}
+                    >
+                        about me
+                    </div>
+                    <div className="exp-nav" style={{ textDecoration: 'line-through' }}>
+                        experience
+                    </div>
+                    <div 
+                        className="fun-nav"  
+                        onClick={(e) => scrollToComponent(e, funLinksRef)}
+                    >
+                        links
+                    </div>
+                </div>
+            </div>
         </div>
-    </span>
-    </div>
-)
-}
-export default Nav
+    );
+};
+
+export default Nav;
