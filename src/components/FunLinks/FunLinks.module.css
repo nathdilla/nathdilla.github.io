@@ -52,6 +52,34 @@
     justify-content: center;
 }
 
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+  .container1 {
+      width: 80vw;
+      height: 100vh;
+      flex-direction: column;
+  }
+
+  .container2 {
+      height: 10vh;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .container3 {
+      height: 10vh;
+      flex-direction: column;
+      justify-content: flex-start;
+  }
+
+  .container4 {
+      height: 10vh;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+  }
+}
+
 .contentbox {
     position: relative;    /* So the background can be absolutely positioned */
     overflow: hidden;      /* Crop overflow if we scale/zoom the bg */
