@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d8b885f5.css",
-    "main.js": "/static/js/main.36a63a89.js",
+    "main.css": "/static/css/main.cdc052f3.css",
+    "main.js": "/static/js/main.691df4fa.js",
     "static/media/globe-texture.jpeg": "/static/media/globe-texture.47b44862074fc67952e4.jpeg",
     "static/media/guitarguy.jpeg": "/static/media/guitarguy.002f0b6fbbf6bc8ae695.jpeg",
     "static/media/atmosphere-globe.png": "/static/media/atmosphere-globe.d2190be8c77af516e9c2.png",
@@ -10,15 +10,17 @@
     "static/media/suntwist.jpeg": "/static/media/suntwist.5380ffc5a8d981231675.jpeg",
     "static/media/art.jpeg": "/static/media/art.0fd90709c5057d7da798.jpeg",
     "static/media/musician.jpeg": "/static/media/musician.20c4fdded2728629a981.jpeg",
+    "static/media/christmasCouple.png": "/static/media/christmasCouple.990b846dc1073fd5dd62.png",
     "static/media/worship.jpeg": "/static/media/worship.f2fe24a51637a3c1ae9c.jpeg",
     "static/media/engineer.png": "/static/media/engineer.e4a62d1e5a574cc1e3a8.png",
     "static/media/sky.jpeg": "/static/media/sky.153b064f4b0147e43117.jpeg",
+    "static/media/snow.png": "/static/media/snow.bfa80af03e7b2f975b41.png",
     "index.html": "/index.html",
-    "main.d8b885f5.css.map": "/static/css/main.d8b885f5.css.map",
-    "main.36a63a89.js.map": "/static/js/main.36a63a89.js.map"
+    "main.cdc052f3.css.map": "/static/css/main.cdc052f3.css.map",
+    "main.691df4fa.js.map": "/static/js/main.691df4fa.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8b885f5.css",
-    "static/js/main.36a63a89.js"
+    "static/css/main.cdc052f3.css",
+    "static/js/main.691df4fa.js"
   ]
 }
