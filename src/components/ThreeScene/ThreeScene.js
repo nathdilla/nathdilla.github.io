@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import globeTexture from '../../images/globe-texture.jpeg';
@@ -7,8 +7,11 @@ import cloudTexture from '../../images/atmosphere-globe.png'; // Import the clou
 const ThreeScene = () => {
   const mountRef = useRef(null);
   const startTimeRef = useRef(Date.now()); // Track the start time
+  const [isRendering, setIsRendering] = useState(true); // Toggle state
+
 
   useEffect(() => {
+    if (!isRendering) return;
     // Create the scene
     const scene = new THREE.Scene();
 

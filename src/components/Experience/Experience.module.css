@@ -1,5 +1,5 @@
 .experience {
-   height: 100vh;
+   /* height: auto; */
    width: 75vw;
 }
 .content {
@@ -15,4 +15,16 @@
 
 .projects_content{
     display: flex;
+}
+
+.compHeader {
+    font-weight: bold;
+    padding: 10px 0px 10px;
+    width: 100%;
+}
+
+.experienceContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }

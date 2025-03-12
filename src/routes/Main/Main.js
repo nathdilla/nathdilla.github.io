@@ -2,6 +2,7 @@ import styles from './Main.module.css';
 import Nav from '../../components/Nav/Nav';
 import Intro from '../../components/Intro/Intro';
 import About from '../../components/About/About';
+import Experience from '../../components/Experience/Experience';
 import FunLinks from '../../components/FunLinks/FunLinks.js';
 
 import React, { useRef } from "react";
@@ -38,6 +39,7 @@ function App() {
         </div>
         <div ref={introRef}><Intro /></div>
         <div ref={aboutRef}><About /></div>
+        <div ref={aboutRef}><Experience /></div>
         <div ref={funLinksRef}><FunLinks /></div>
         <footer className="App-footer" style={{color: 'white', fontSize: '15px'}}>
           made by nathan dilla
